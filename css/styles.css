@@ -1,0 +1,143 @@
+:root {
+    --color-teal: #46a29f; 
+    --color-teal-dark: #2c7a77;
+    --color-dark: #212529;
+    --color-gray: #f8f9fa;
+    --font-heading: 'Raleway', sans-serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+body { font-family: var(--font-body); color: #555; overflow-x: hidden; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 300; color: var(--color-dark); }
+
+/* UTILIDADES */
+.letter-spacing-2 { letter-spacing: 2px; }
+.letter-spacing-3 { letter-spacing: 3px; }
+.fw-light { font-weight: 300 !important; }
+.text-teal { color: var(--color-teal) !important; }
+.text-teal-light { color: #aeebea !important; }
+.bg-teal { background-color: var(--color-teal) !important; }
+.btn-teal { background-color: var(--color-teal); border: 1px solid var(--color-teal); transition: all 0.3s ease; }
+.btn-teal:hover { background-color: var(--color-teal-dark); border-color: var(--color-teal-dark); }
+
+/* NAVBAR */
+.navbar { padding: 15px 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+.nav-link { font-family: var(--font-heading); text-transform: uppercase; font-size: 0.85rem; font-weight: 600; color: #333 !important; letter-spacing: 1px; margin-left: 15px; transition: color 0.3s; }
+.nav-link:hover, .nav-link.active { color: var(--color-teal) !important; }
+
+/* HERO SECTION */
+.hero-section { position: relative; height: 100vh; min-height: 700px; background-color: #000; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+
+.hero-bg { 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    background-size: cover; 
+    background-position: 18% center; 
+    z-index: 0; opacity: 1; 
+    filter: brightness(1.2) contrast(1.05); 
+    animation: zoomHero 20s infinite alternate; 
+}
+
+.hero-overlay { 
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.65) 100%); 
+    z-index: 1; 
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 900px; padding: 0 15px; text-align: center; margin-bottom: 80px; }
+
+/* TITULOS HERO */
+.hero-brand-name { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 4rem; line-height: 1; color: #fff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; text-shadow: 0 4px 20px rgba(0,0,0,0.8); }
+.hero-slogan { font-family: 'Raleway', sans-serif; font-weight: 400; font-size: 1.4rem; line-height: 1.4; color: rgba(255, 255, 255, 0.95); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+.separator-hero { height: 2px; width: 80px; }
+
+/* Logos Abajo */
+.hero-logos-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    text-align: center;
+    width: 100%;
+}
+.hero-logos-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 15px 40px !important;
+}
+.hero-logos-wrapper .vr { background-color: #333 !important; opacity: 0.3 !important; width: 1px; }
+.hero-logo-item { height: 70px; width: auto; transition: transform 0.3s ease; }
+.hero-logo-item:hover { transform: scale(1.05); }
+
+@keyframes zoomHero { from { transform: scale(1); } to { transform: scale(1.1); } }
+@media (max-width: 768px) {
+    .hero-brand-name { font-size: 2.5rem; }
+    .hero-slogan { font-size: 1rem; }
+    .hero-bg { background-position: 25% center; }
+    .hero-logo-item { height: 50px; }
+    .hero-logos-wrapper { padding: 1rem !important; gap: 1rem !important; }
+}
+
+/* OTROS ESTILOS */
+.badge-float { position: absolute; bottom: 30px; right: -20px; z-index: 10; min-width: 160px; text-align: center; border-radius: 2px; }
+@media (max-width: 991px) { .badge-float { right: 0; bottom: 0; } }
+
+/* PESTAÑAS */
+.nav-pills .nav-link { color: #555; background-color: #f1f1f1; margin: 0 5px; border: 1px solid #ddd; font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; border-radius: 0; }
+.nav-pills .nav-link.active { background-color: var(--color-teal) !important; color: #fff !important; border-color: var(--color-teal); }
+
+.separator { width: 60px; height: 3px; }
+
+/* GALERÍA GRID */
+.gallery-item-wide { height: 450px; position: relative; } 
+.gallery-item-rect { height: 300px; position: relative; } 
+.gallery-item-square { height: 300px; position: relative; } 
+
+.gallery-item-wide img, 
+.gallery-item-rect img, 
+.gallery-item-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.gallery-item-wide:hover img, 
+.gallery-item-rect:hover img, 
+.gallery-item-square:hover img { 
+    transform: scale(1.05); 
+}
+.cursor-pointer { cursor: pointer; }
+
+.gallery-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); opacity: 0; transition: opacity 0.3s ease;
+    display: flex; align-items: center; justify-content: center;
+}
+.gallery-item-wide:hover .gallery-overlay,
+.gallery-item-rect:hover .gallery-overlay,
+.gallery-item-square:hover .gallery-overlay { 
+    opacity: 1; 
+}
+
+@media (max-width: 768px) {
+    .gallery-item-wide { height: 250px; }
+    .gallery-item-rect { height: 250px; }
+    .gallery-item-square { height: 250px; }
+}
+
+#modalImage { max-height: 85vh; width: auto; max-width: 100%; object-fit: contain; }
+
+/* CHATBOT */
+.chat-widget { position: fixed; bottom: 30px; right: 30px; width: 320px; background: white; border-radius: 12px; z-index: 1050; display: none; flex-direction: column; overflow: hidden; box-shadow: 0 5px 25px rgba(0,0,0,0.15); }
+.chat-header { background-color: var(--color-teal); color: white; }
+.chat-body { height: 280px; overflow-y: auto; }
+.bot-message { background: #f0f2f5; padding: 10px 15px; border-radius: 15px 15px 15px 2px; margin-bottom: 10px; font-size: 0.9rem; color: #333; width: fit-content; max-width: 85%; }
+.user-reply { background: var(--color-teal); color: white; padding: 8px 12px; border-radius: 15px 15px 2px 15px; margin-bottom: 10px; font-size: 0.9rem; align-self: flex-end; margin-left: auto; width: fit-content; }
+#close-chat { cursor: pointer; opacity: 0.9; }
+#close-chat:hover { opacity: 1; transform: scale(1.1); }
