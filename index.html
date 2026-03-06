@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="80">
 
     <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top transition-all">
@@ -21,7 +25,8 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logoedificiocentenariosinfondo.png" alt="Edificio Centenario" height="55">
             </a>
-            <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
                 <i class="bi bi-list fs-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,6 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="#tipologias">Unidades</a></li>
                     <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                     <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Noticias</a></li>
                     <li class="nav-item ms-3">
                         <a href="#contacto" class="btn btn-teal text-white rounded-0 px-4 fw-bold">CONTACTO</a>
                     </li>
@@ -40,25 +46,29 @@
     </nav>
 
     <section id="inicio" class="hero-section text-center text-white">
-        <div class="hero-bg" style="background-image: url('assets/img/panoramica1.jpg');"></div>
+        <video class="hero-bg" autoplay muted loop playsinline poster="assets/img/panoramica1.jpg">
+            <source src="assets/video/videodeproyecto.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
-        
+
         <div class="hero-content fade-in-up">
             <p class="text-uppercase letter-spacing-3 mb-2 small fw-bold text-teal-light">Franck, Santa Fe</p>
             <h1 class="hero-brand-name">EDIFICIO CENTENARIO</h1>
             <h2 class="hero-slogan">DECIDIMOS CRECER, DECIDIMOS ESTAR CERCA.</h2>
             <div class="separator-hero mx-auto my-4 bg-teal"></div>
-            
+
             <div class="d-flex justify-content-center gap-3 mt-4">
                 <a href="#proyecto" class="btn btn-teal text-white rounded-0 px-5 py-3 fw-bold shadow">EL PROYECTO</a>
-                <a href="https://wa.me/5493425450016" target="_blank" class="btn btn-outline-light rounded-0 px-5 py-3 fw-bold">
+                <a href="https://wa.me/5493425141860" target="_blank"
+                    class="btn btn-outline-light rounded-0 px-5 py-3 fw-bold">
                     <i class="bi bi-whatsapp"></i> CONSULTAR
                 </a>
             </div>
         </div>
 
         <div class="hero-logos-bottom fade-in-up" style="animation-delay: 0.5s;">
-            <p class="small text-uppercase mb-3 text-white-50 letter-spacing-2" style="font-size: 0.8rem; text-shadow: 0 1px 2px rgba(0,0,0,0.8);">Un desarrollo en conjunto</p>
+            <p class="small text-uppercase mb-3 text-white-50 letter-spacing-2"
+                style="font-size: 0.8rem; text-shadow: 0 1px 2px rgba(0,0,0,0.8);">Un desarrollo en conjunto</p>
             <div class="hero-logos-wrapper d-inline-flex align-items-center justify-content-center gap-5 px-5 py-4">
                 <img src="assets/img/8deseptiembrelogosinfondo.png" class="hero-logo-item" alt="Coop 8 de Septiembre">
                 <div class="vr bg-white opacity-25" style="height: 50px;"></div>
@@ -72,39 +82,50 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="position-relative">
-                        <img src="assets/img/exterior6.jpg" class="img-fluid shadow-lg rounded-1" alt="Fachada Edificio">
+                        <img src="assets/img/exterior6.jpg" class="img-fluid shadow-lg rounded-1"
+                            alt="Fachada Edificio">
                         <div class="badge-float bg-teal text-white p-3 shadow">
                             <span class="d-block fw-bold h3 mb-0">100%</span>
                             <span class="small text-uppercase">Financiación<br>adaptada para vos</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6 ps-lg-5">
                     <h6 class="text-teal text-uppercase letter-spacing-2 fw-bold mb-3">Nuestra Historia</h6>
                     <h2 class="mb-4 text-dark display-6">HISTORIA, ARRAIGO Y VISIÓN</h2>
-                    
+
                     <div class="text-muted fw-light mb-4" style="font-size: 1.05rem; line-height: 1.8;">
-                        <p>A <strong>100 años</strong> de su fundación, AUT vuelve a marcar un hito en la localidad impulsando el primer edificio de Franck, ubicado en un punto emblemático: frente a la plaza, la escuela y la iglesia, donde la vida del pueblo sucede todos los días.</p>
-                        <p class="mb-0"><strong>Nivel I</strong> no es solo un desarrollo inmobiliario. Es una nueva forma de habitar y vivir Franck, donde la ubicación estratégica, la calidad constructiva y la seguridad se integran con espacios pensados tanto para la vida cotidiana como para el encuentro, los servicios y la actividad comercial, proyectando valor y movimiento a largo plazo.</p>
+                        <p>A <strong>100 años</strong> de su fundación, AUT vuelve a marcar un hito en la localidad
+                            impulsando el primer edificio de Franck, ubicado en un punto emblemático: frente a la plaza,
+                            la escuela y la iglesia, donde la vida del pueblo sucede todos los días.</p>
+                        <p class="mb-0"><strong>Nivel I</strong> no es solo un desarrollo inmobiliario. Es una nueva
+                            forma de habitar y vivir Franck, donde la ubicación estratégica, la calidad constructiva y
+                            la seguridad se integran con espacios pensados tanto para la vida cotidiana como para el
+                            encuentro, los servicios y la actividad comercial, proyectando valor y movimiento a largo
+                            plazo.</p>
                     </div>
 
                     <div id="counters-container" class="row mt-5 text-center g-3">
                         <div class="col-6 col-md-3 border-end">
                             <h3 class="fw-bold text-teal display-5 counter" data-target="100">0</h3>
-                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">Años de<br>Historia</span>
+                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">Años
+                                de<br>Historia</span>
                         </div>
                         <div class="col-6 col-md-3 border-end">
                             <h3 class="fw-bold text-teal display-5 counter" data-target="30">0</h3>
-                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">Unidades<br>Totales</span>
+                            <span
+                                class="small text-uppercase text-muted fw-bold letter-spacing-2">Unidades<br>Totales</span>
                         </div>
                         <div class="col-6 col-md-3 border-end">
                             <h3 class="fw-bold text-teal display-5 counter" data-target="2500">0</h3>
-                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">M² en<br>Construcción</span>
+                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">M²
+                                en<br>Construcción</span>
                         </div>
                         <div class="col-6 col-md-3">
                             <h3 class="fw-bold text-teal display-5 counter" data-target="48">0</h3>
-                            <span class="small text-uppercase text-muted fw-bold letter-spacing-2">Cuotas<br>Posibles</span>
+                            <span
+                                class="small text-uppercase text-muted fw-bold letter-spacing-2">Cuotas<br>Posibles</span>
                         </div>
                     </div>
 
@@ -120,17 +141,23 @@
                 <h2 class="text-dark">UNIDADES DISPONIBLES</h2>
                 <div class="separator mx-auto mt-3 bg-teal"></div>
             </div>
-            
+
             <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation"><button class="nav-link active rounded-0 px-4 py-2" id="pills-u1-tab" data-bs-toggle="pill" data-bs-target="#pills-u1" type="button">UNIDAD 1</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u2-tab" data-bs-toggle="pill" data-bs-target="#pills-u2" type="button">UNIDAD 2</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u3-tab" data-bs-toggle="pill" data-bs-target="#pills-u3" type="button">UNIDAD 3</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u4-tab" data-bs-toggle="pill" data-bs-target="#pills-u4" type="button">UNIDAD 4</button></li>
-                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u5-tab" data-bs-toggle="pill" data-bs-target="#pills-u5" type="button">UNIDAD 5</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link active rounded-0 px-4 py-2"
+                        id="pills-u1-tab" data-bs-toggle="pill" data-bs-target="#pills-u1" type="button">UNIDAD
+                        1</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u2-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-u2" type="button">UNIDAD 2</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u3-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-u3" type="button">UNIDAD 3</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u4-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-u4" type="button">UNIDAD 4</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-0 px-4 py-2" id="pills-u5-tab"
+                        data-bs-toggle="pill" data-bs-target="#pills-u5" type="button">UNIDAD 5</button></li>
             </ul>
 
             <div class="tab-content" id="pills-tabContent">
-                
+
                 <div class="tab-pane fade show active" id="pills-u1">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body p-0">
@@ -139,14 +166,22 @@
                                     <h3 class="mb-3 text-teal">Departamento (1 Dormitorio)</h3>
                                     <p class="text-muted">Diseño eficiente y funcional.</p>
                                     <ul class="list-unstyled text-muted small mb-4">
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup. Total:</strong> 57 m²</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Orientación:</strong> Noroeste</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor, Baño completo.</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup.
+                                                Total:</strong> 57 m²</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Orientación:</strong> Noroeste</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor,
+                                            Baño completo.</li>
                                     </ul>
-                                    <a href="https://wa.me/5493425450016?text=Hola,%20me%20interesa%20la%20Unidad%201" target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR PRECIO</a>
+                                    <a href="https://wa.me/5493425141860?text=Hola,%20me%20interesa%20la%20Unidad%201"
+                                        target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR
+                                        PRECIO</a>
                                 </div>
-                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img src="assets/img/unidad1plano.jpg" class="img-fluid" alt="Plano 1"></div>
-                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad1en3d.png" class="img-fluid" alt="3D 1"></div>
+                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img
+                                        src="assets/img/unidad1plano.jpg" class="img-fluid" alt="Plano 1"></div>
+                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad1en3d.png"
+                                        class="img-fluid" alt="3D 1"></div>
                             </div>
                         </div>
                     </div>
@@ -160,14 +195,22 @@
                                     <h3 class="mb-3 text-teal">Departamento (2 Dormitorios)</h3>
                                     <p class="text-muted">Compacto y luminoso, ideal inversión.</p>
                                     <ul class="list-unstyled text-muted small mb-4">
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup. Total:</strong> 78 m²</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Orientación:</strong> Oeste</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor, Dormitorios al frente y contra frente, Baño.</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup.
+                                                Total:</strong> 78 m²</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Orientación:</strong> Oeste</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor,
+                                            Dormitorios al frente y contra frente, Baño.</li>
                                     </ul>
-                                    <a href="https://wa.me/5493425450016?text=Hola,%20me%20interesa%20la%20Unidad%202" target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR PRECIO</a>
+                                    <a href="https://wa.me/5493425141860?text=Hola,%20me%20interesa%20la%20Unidad%202"
+                                        target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR
+                                        PRECIO</a>
                                 </div>
-                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img src="assets/img/unidad2plano.jpg" class="img-fluid" alt="Plano 2"></div>
-                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad2en3d.png" class="img-fluid" alt="3D 2"></div>
+                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img
+                                        src="assets/img/unidad2plano.jpg" class="img-fluid" alt="Plano 2"></div>
+                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad2en3d.png"
+                                        class="img-fluid" alt="3D 2"></div>
                             </div>
                         </div>
                     </div>
@@ -181,14 +224,22 @@
                                     <h3 class="mb-3 text-teal">Departamento (1 Dormitorio)</h3>
                                     <p class="text-muted">Espacios integrados y ventilación natural.</p>
                                     <ul class="list-unstyled text-muted small mb-4">
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup. Total:</strong> 51 m²</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Orientación:</strong> Norte</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor, Dormitorio, Baño.</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup.
+                                                Total:</strong> 51 m²</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Orientación:</strong> Norte</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor,
+                                            Dormitorio, Baño.</li>
                                     </ul>
-                                    <a href="https://wa.me/5493425450016?text=Hola,%20me%20interesa%20la%20Unidad%203" target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR PRECIO</a>
+                                    <a href="https://wa.me/5493425141860?text=Hola,%20me%20interesa%20la%20Unidad%203"
+                                        target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR
+                                        PRECIO</a>
                                 </div>
-                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img src="assets/img/unidad3plano.jpg" class="img-fluid" alt="Plano 3"></div>
-                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad3en3d.png" class="img-fluid" alt="3D 3"></div>
+                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img
+                                        src="assets/img/unidad3plano.jpg" class="img-fluid" alt="Plano 3"></div>
+                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad3en3d.png"
+                                        class="img-fluid" alt="3D 3"></div>
                             </div>
                         </div>
                     </div>
@@ -202,14 +253,22 @@
                                     <h3 class="mb-3 text-teal">Departamento (1 Dormitorio)</h3>
                                     <p class="text-muted">Amplitud y confort familiar.</p>
                                     <ul class="list-unstyled text-muted small mb-4">
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup. Total:</strong> 58 m²</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Orientación:</strong> Noreste</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor, Dormitorio, Baño.</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup.
+                                                Total:</strong> 58 m²</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Orientación:</strong> Noreste</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Ambientes:</strong> Cocina-Lavadero, Estar-Comedor,
+                                            Dormitorio, Baño.</li>
                                     </ul>
-                                    <a href="https://wa.me/5493425450016?text=Hola,%20me%20interesa%20la%20Unidad%204" target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR PRECIO</a>
+                                    <a href="https://wa.me/5493425141860?text=Hola,%20me%20interesa%20la%20Unidad%204"
+                                        target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR
+                                        PRECIO</a>
                                 </div>
-                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img src="assets/img/unidad4plano.jpg" class="img-fluid" alt="Plano 4"></div>
-                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad4en3d.png" class="img-fluid" alt="3D 4"></div>
+                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img
+                                        src="assets/img/unidad4plano.jpg" class="img-fluid" alt="Plano 4"></div>
+                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad4en3d.png"
+                                        class="img-fluid" alt="3D 4"></div>
                             </div>
                         </div>
                     </div>
@@ -223,14 +282,21 @@
                                     <h3 class="mb-3 text-teal">Departamento (2 Dorm. Premium)</h3>
                                     <p class="text-muted">Categoría superior con doble orientación.</p>
                                     <ul class="list-unstyled text-muted small mb-4">
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup. Total:</strong> 72 m²</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Orientación:</strong> Este</li>
-                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Detalle:</strong> Dormitorio al frente y contrafrente.</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Sup.
+                                                Total:</strong> 72 m²</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong
+                                                class="text-dark">Orientación:</strong> Este</li>
+                                        <li class="mb-2 border-bottom pb-2"><strong class="text-dark">Detalle:</strong>
+                                            Dormitorio al frente y contrafrente.</li>
                                     </ul>
-                                    <a href="https://wa.me/5493425450016?text=Hola,%20me%20interesa%20la%20Unidad%205" target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR PRECIO</a>
+                                    <a href="https://wa.me/5493425141860?text=Hola,%20me%20interesa%20la%20Unidad%205"
+                                        target="_blank" class="btn btn-teal text-white w-100 rounded-0">CONSULTAR
+                                        PRECIO</a>
                                 </div>
-                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img src="assets/img/unidad5plano.jpg" class="img-fluid" alt="Plano 5"></div>
-                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad5en3d.png" class="img-fluid" alt="3D 5"></div>
+                                <div class="col-lg-4 border-end border-start p-2 bg-light text-center"><img
+                                        src="assets/img/unidad5plano.jpg" class="img-fluid" alt="Plano 5"></div>
+                                <div class="col-lg-4 p-2 bg-light text-center"><img src="assets/img/unidad5en3d.png"
+                                        class="img-fluid" alt="3D 5"></div>
                             </div>
                         </div>
                     </div>
@@ -250,61 +316,85 @@
 
             <div class="row g-3">
                 <div class="col-12">
-                    <div class="gallery-item-wide rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/panoramica2.jpg')">
+                    <div class="gallery-item-wide rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/panoramica2.jpg')">
                         <img src="assets/img/panoramica2.jpg" class="img-fluid w-100" alt="Vista Panorámica">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-1"></i></div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/interior1.jpeg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/interior1.jpeg')">
                         <img src="assets/img/interior1.jpeg" class="img-fluid w-100 h-100" alt="Interior 1">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/interior2.jpeg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/interior2.jpeg')">
                         <img src="assets/img/interior2.jpeg" class="img-fluid w-100 h-100" alt="Interior 2">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/interior3.jpeg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/interior3.jpeg')">
                         <img src="assets/img/interior3.jpeg" class="img-fluid w-100 h-100" alt="Interior 3">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="gallery-item-rect rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/exterior4.jpg')">
+                    <div class="gallery-item-rect rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/exterior4.jpg')">
                         <img src="assets/img/exterior4.jpg" class="img-fluid w-100 h-100" alt="Fachada Principal">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="gallery-item-rect rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/exterior7.jpg')">
+                    <div class="gallery-item-rect rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/exterior7.jpg')">
                         <img src="assets/img/exterior7.jpg" class="img-fluid w-100 h-100" alt="Fachada Frontal">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/exterior1.jpg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/exterior1.jpg')">
                         <img src="assets/img/exterior1.jpg" class="img-fluid w-100 h-100" alt="Detalle Torre">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/exterior5.jpg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/exterior5.jpg')">
                         <img src="assets/img/exterior5.jpg" class="img-fluid w-100 h-100" alt="Planta Baja">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer" onclick="openGalleryModal('assets/img/exterior3.jpg')">
+                    <div class="gallery-item-square rounded overflow-hidden shadow-sm cursor-pointer"
+                        onclick="openGalleryModal('assets/img/exterior3.jpg')">
                         <img src="assets/img/exterior3.jpg" class="img-fluid w-100 h-100" alt="Detalle Balcón">
                         <div class="gallery-overlay"><i class="bi bi-zoom-in text-white fs-2"></i></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Avance de obra" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-teal text-uppercase letter-spacing-2 fw-bold">Novedades</h6>
+                <h2 class="text-dark">NOTICIAS</h2>
+                <div class="separator mx-auto mt-3 bg-teal"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted">Próximamente novedades sobre el avance de obra y eventos.</p>
                 </div>
             </div>
         </div>
@@ -315,29 +405,34 @@
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <h2 class="mb-4 text-dark display-6">UBICACIÓN & CONTACTO</h2>
-                    <p class="text-muted mb-4">Estamos en <strong>Rivadavia 1998 (Esq. Alberdi), Franck, Santa Fe</strong>.</p>
-                    
+                    <p class="text-muted mb-4">Estamos en <strong>Rivadavia 1998 (Esq. Alberdi), Franck, Santa
+                            Fe</strong>.</p>
+
                     <form>
-                        <div class="mb-3"><input type="text" class="form-control rounded-0 p-3 bg-light border-0" placeholder="Nombre completo"></div>
-                        <div class="mb-3"><input type="email" class="form-control rounded-0 p-3 bg-light border-0" placeholder="Correo electrónico"></div>
-                        <div class="mb-3"><textarea class="form-control rounded-0 p-3 bg-light border-0" rows="3" placeholder="Mensaje"></textarea></div>
-                        <button type="button" class="btn btn-dark w-100 rounded-0 py-3 text-uppercase letter-spacing-2 fw-bold">Enviar Consulta</button>
+                        <div class="mb-3"><input type="text" class="form-control rounded-0 p-3 bg-light border-0"
+                                placeholder="Nombre completo"></div>
+                        <div class="mb-3"><input type="email" class="form-control rounded-0 p-3 bg-light border-0"
+                                placeholder="Correo electrónico"></div>
+                        <div class="mb-3"><textarea class="form-control rounded-0 p-3 bg-light border-0" rows="3"
+                                placeholder="Mensaje"></textarea></div>
+                        <button type="button"
+                            class="btn btn-dark w-100 rounded-0 py-3 text-uppercase letter-spacing-2 fw-bold">Enviar
+                            Consulta</button>
                     </form>
-                    
+
                     <div class="mt-4 small text-muted">
-                        <div class="mb-2"><i class="bi bi-envelope-fill text-teal me-2"></i> administracion@edificiocentenario.com.ar</div>
-                        <div><i class="bi bi-telephone-fill text-teal me-2"></i> 342-5450016</div>
+                        <div class="mb-2"><i class="bi bi-envelope-fill text-teal me-2"></i>
+                            administracion@edificiocentenario.com.ar</div>
+                        <div><i class="bi bi-telephone-fill text-teal me-2"></i> 342-5141860</div>
+                        <div class="mt-2"><a href="https://instagram.com" target="_blank"
+                                class="text-decoration-none text-muted"><i class="bi bi-instagram text-teal me-2"></i>
+                                Seguinos en Instagram</a></div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="h-100 w-100 rounded shadow-sm overflow-hidden" style="min-height: 450px;">
-                        <iframe 
-                            src="https://www.google.com/maps?q=Rivadavia+1998,+Franck,+Santa+Fe&output=embed" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
+                        <iframe src="https://www.google.com/maps?q=Rivadavia+1998,+Franck,+Santa+Fe&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
@@ -347,13 +442,16 @@
     </section>
 
     <footer class="bg-dark text-white py-4 text-center">
-        <div class="container"><p class="mb-0 small letter-spacing-2 text-white-50">® Realizado por SENA Web System - 342 5356890</p></div>
+        <div class="container">
+            <p class="mb-0 small letter-spacing-2 text-white-50">® Realizado por SENA Web System - 342 5356890</p>
+        </div>
     </footer>
 
     <div id="chat-widget" class="chat-widget shadow-lg">
         <div class="chat-header p-3 text-white d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <div class="bg-white rounded-circle p-1 me-2 d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;">
+                <div class="bg-white rounded-circle p-1 me-2 d-flex align-items-center justify-content-center"
+                    style="width: 35px; height: 35px;">
                     <img src="assets/img/logoedificiocentenariosinfondo.png" class="img-fluid" alt="Bot">
                 </div>
                 <div style="line-height: 1.2;">
@@ -361,11 +459,14 @@
                     <span style="font-size: 10px; opacity: 0.9;">En línea</span>
                 </div>
             </div>
-            <button type="button" id="close-chat" class="btn-close btn-close-white btn-sm" aria-label="Cerrar" onclick="document.getElementById('chat-widget').style.display='none'"></button>
+            <button type="button" id="close-chat" class="btn-close btn-close-white btn-sm" aria-label="Cerrar"
+                onclick="document.getElementById('chat-widget').style.display='none'"></button>
         </div>
         <div id="chat-body" class="chat-body p-3 bg-light"></div>
         <div class="chat-footer p-2 bg-white border-top text-center">
-            <a href="https://wa.me/5493425450016" target="_blank" class="btn btn-success w-100 rounded-pill btn-sm fw-bold"><i class="bi bi-whatsapp me-1"></i> WhatsApp Directo</a>
+            <a href="https://wa.me/5493425141860" target="_blank"
+                class="btn btn-success w-100 rounded-pill btn-sm fw-bold"><i class="bi bi-whatsapp me-1"></i> WhatsApp
+                Directo</a>
         </div>
     </div>
 
@@ -373,7 +474,8 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-body p-0 position-relative text-center">
-                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
                     <img id="modalImage" src="" class="img-fluid rounded shadow-lg" alt="Vista Ampliada">
                 </div>
             </div>
@@ -383,4 +485,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
